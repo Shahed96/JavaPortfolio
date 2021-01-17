@@ -7,8 +7,37 @@ package com.shahed.alienGame;
 
 /**
  *
- * @author DELL
+ * @author Sh. A.
  */
-public class Alien {
-    
+ abstract class Alien {
+
+    private int health; // 0=dead, 100=full strength
+    private String name;
+
+    public Alien(int health, String name) {
+        setHealth(health);
+        setName(name);
+    }
+
+    public void setHealth(int health) {
+        if (health <= 0 && health >= 100) {
+            this.health = health;
+        }
+    }
+
+    public void setName(String name) {
+        if (name != null) {
+            this.name = name;
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public abstract int getDamage();
 }

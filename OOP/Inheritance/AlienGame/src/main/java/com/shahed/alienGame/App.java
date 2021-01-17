@@ -1,7 +1,7 @@
 package com.shahed.alienGame;
 
 /**
- * Hello world!
+ * 
  *
  */
 public class App 
