@@ -20,7 +20,7 @@ package com.shahed.alienGame;
     }
 
     public void setHealth(int health) {
-        if (health <= 0 && health >= 100) {
+        if (health >= 0 && health <= 100) {
             this.health = health;
         }
     }

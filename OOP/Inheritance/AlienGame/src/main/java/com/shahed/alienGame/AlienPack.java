@@ -7,15 +7,15 @@ package com.shahed.alienGame;
 
 /**
  *
- * @author Sh. A. 
+ * @author Sh. A.
  */
-   public class AlienPack {
+public class AlienPack {
 
-    private  Alien[] aliens;  //composition 
+    private Alien[] aliens;  //composition (array of a class type)
 
     //cons with para of array size 
     public AlienPack(int numAliens) {
-        aliens = new Alien [numAliens]; //create the array 
+        aliens = new Alien[numAliens]; //create the array 
     }
 
     public void addAlien(Alien newAlien, int index) {
@@ -27,9 +27,10 @@ package com.shahed.alienGame;
     }
 
     public int calculateDamage() {
-       int damage = 0; 
-    for (int i=0; i<aliens.length; i++)            
-      damage += aliens[i].getDamage();            
-    return damage; 
+        int damage = 0;
+        for (int i = 0; i < aliens.length; i++) {
+            damage += aliens[i].getDamage();    //getDamage of each alien type will determined in the 
+        }                                             //run time because of late binding
+        return damage;
     }
 }
