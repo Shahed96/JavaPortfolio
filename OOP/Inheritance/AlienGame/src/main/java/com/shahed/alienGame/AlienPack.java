@@ -7,7 +7,7 @@ package com.shahed.alienGame;
 
 /**
  *
- * @author DELL
+ * @author Sh. A. 
  */
    public class AlienPack {
 
@@ -15,7 +15,7 @@ package com.shahed.alienGame;
 
     //cons with para of array size 
     public AlienPack(int numAliens) {
-        aliens = new Alien [numAliens]; //how can we create objects from AC????????????
+        aliens = new Alien [numAliens]; //create the array 
     }
 
     public void addAlien(Alien newAlien, int index) {
@@ -28,8 +28,8 @@ package com.shahed.alienGame;
 
     public int calculateDamage() {
        int damage = 0; 
-    for (int i=0; i<aliens.length; i++)            // Call getDamage() from each alien to
-      damage += aliens[i].getDamage();             // calculate total damage??????????????????????????
+    for (int i=0; i<aliens.length; i++)            
+      damage += aliens[i].getDamage();            
     return damage; 
     }
 }
