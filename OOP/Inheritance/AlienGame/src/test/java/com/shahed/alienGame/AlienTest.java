@@ -17,7 +17,7 @@ public class AlienTest {
     {
         alien = new MarshmallowManAlien(99, "Marshmallow");
     }
-    @Disabled 
+
     @Test
     public void testGetHealth() {
 
