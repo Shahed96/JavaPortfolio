@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit test Drama
  */
-public class AppTest {
+public class DramaTest {
 
     Drama movie;
 
