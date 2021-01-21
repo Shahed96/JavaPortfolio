@@ -9,7 +9,7 @@ package movies;
  *
  * @author DELL
  */
-public class Movies {
+public abstract class  Movies {
 
     private String rating;
     private int ID;
@@ -78,4 +78,7 @@ public class Movies {
         return (movieObject.ID == ID && movieObject.rating.equalsIgnoreCase(rating)
                 && movieObject.title.equalsIgnoreCase(title));
     }
+    public abstract double calculateFee(int daysMovieLate);
+
+      
 }
