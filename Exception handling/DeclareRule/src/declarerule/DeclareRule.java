@@ -14,15 +14,14 @@ public class DeclareRule {
         while (!done) {
             try {
 
-                double r = returnRatio();
-                done =true;
-                System.out.println("n1/n2 = "+r);
+                double r = returnRatio(); //method may throw an exception
+                done = true;
+                System.out.println("n1/n2 = " + r);
 
             } catch (InputMismatchException | DivideByZeroException e) {
                 System.out.println("Retry");
             }
-        
-        
+
         }
     }
 
