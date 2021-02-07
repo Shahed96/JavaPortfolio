@@ -19,6 +19,7 @@ public class ReadingText {
         inputStream = new Scanner(new FileInputStream("quote.txt"));
         while (inputStream.hasNext()) {
             line = inputStream.nextLine();
+            
              System.out.println(line);
         }
         inputStream.close();
