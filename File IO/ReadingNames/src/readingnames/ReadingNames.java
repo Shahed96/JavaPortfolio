@@ -35,7 +35,7 @@ public class ReadingNames {
         Scanner inputStream2 = new Scanner(new FileInputStream("boynames.txt"));
 
         int i = 0, j = 0;
-        //reading girls names:
+        //reading names:
         while (inputStream.hasNext() && inputStream2.hasNext()) {
             girlNames[i] = inputStream.nextLine();
             boyNames[i] = inputStream2.nextLine();
