@@ -19,6 +19,7 @@ public class WritingToBinaryFile {
        {
        outputStream.writeInt(i);
        }
+       outputStream.close();
     }
     
 }
