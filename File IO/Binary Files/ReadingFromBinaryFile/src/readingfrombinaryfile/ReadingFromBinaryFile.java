@@ -1,6 +1,7 @@
 
 package readingfrombinaryfile;
 
+import java.io.EOFException;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,11 +16,17 @@ public class ReadingFromBinaryFile {
   
     public static void main(String[] args) throws FileNotFoundException, IOException {
        ObjectInputStream inputStream =new ObjectInputStream(new FileInputStream("numbers.dat"));
-       int n1=inputStream.readInt();
-       int n2=inputStream.readInt();
-       int n3=inputStream.readInt();
-       System.out.println("n1 = "+n1+" n2 = "+n2 +" n3 = "+n3);
-       inputStream.close();
+       int i=0;
+       int n;
+       
+       while (true){
+        n=inputStream.readInt();
+       System.out.println("n"+(i+1)+" = "+n);
+       i++; 
+       }
+        
+       
+      
        
        
     }
