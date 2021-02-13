@@ -1,28 +1,22 @@
 package com.shahed.studentinterface;
 
+public class App {
 
-public class App 
-{
-    public static void main( String[] args )
-    {
+    public static void main(String[] args) {
         //create an array of student
-       Student [] students =new Student[5];
-       
-       //construct each object
-       
-       students[0]=new Student("Reema",7777);
-       students[1]=new Student("Maram",55555);
-       students[2]=new Student("Kareem",99999);
-       students[3]=new Student("Nuha",99);
-       students[4]=new Student("Hanadi",99999);
-       
-       
-       sort(students);
-       
-       
-       
+        Student[] students = new Student[5];
+
+        //construct each object
+        students[0] = new Student("Reema", 7777);
+        students[1] = new Student("Maram", 55555);
+        students[2] = new Student("Kareem", 99999);
+        students[3] = new Student("Nuha", 99);
+        students[4] = new Student("Hanadi", 99999);
+
+        sort(students);
+
     }
-    
+
     public static void sort(Student[] a) {
 
         int size = a.length;
@@ -54,9 +48,9 @@ public class App
     }
 
     public static void display(Student[] a, int size) {
-System.out.println("Students objects after sorting: ");
+        System.out.println("Students objects after sorting: ");
         for (int i = 0; i < size; i++) {
-            System.out.println("Student's last name: "+a[i].getLastName()+" stdent's ID "+a[i].getID());
+            System.out.println("Student's last name: " + a[i].getLastName() + " stdent's ID " + a[i].getID());
 
         }
     }

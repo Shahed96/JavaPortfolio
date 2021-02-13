@@ -35,8 +35,6 @@ public class Student implements Comparable {
         this.ID = otherStudent.ID;
     }
 
-   
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
