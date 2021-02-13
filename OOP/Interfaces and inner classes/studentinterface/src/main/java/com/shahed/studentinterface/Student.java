@@ -1,5 +1,13 @@
 /*
- * 
+ * Create a Student class that has instance variables for the student's last name and ID number 
+ along with appropriate constructors, assessors and mutators. 
+ Make the Student class implement the Comparable Interface.
+ Define the compareTo method to compare Students objects based on the student ID number. 
+ In the main method, create an array of at least five Student Objects, sort them using Arrays. sort, and output the students. 
+ They should be listed by ascending student number.
+ public int compareTo (Object other) A -ve number if the calling object "comes before" the parameter other
+ A zero if the calling object "equals" the parameter other"comes after" the 
+ A +ve number if the calling object parameter other
  */
 package com.shahed.studentinterface;
 
