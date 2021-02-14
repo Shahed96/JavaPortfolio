@@ -18,18 +18,18 @@ public class ArrayListWithSelectionSort {
      */
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<String>(10);
-        
+
         list.add("rain");
         list.add("cloud");
         list.add("array");
-         System.out.println("Array List befor sorting: ");
-        for (int i = 0; i <  list.size(); i++) {
+        System.out.println("Array List befor sorting: ");
+        for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
         sort(list);
 
-    
     }
+
     public static void sort(ArrayList<String> a) {
 
         int size = a.size();
