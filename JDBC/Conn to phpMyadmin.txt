@@ -1,0 +1,31 @@
+ steps:
+1.add to the project's library:
+ MySQL  JDBC Driver 
+
+2.make new connection
+port:3307
+username:root/ or any othee users you added
+pass:12345678/ or any other pass you added
+Databas: same name as in the phpMyadmin
+
+
+
+//connection class:
+
+
+public class MyConnection {
+    
+    public static Connection getConnection(){
+     
+        Connection con = null;
+        try {
+           Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3307/java_login_register?zeroDateTimeBehavior=convertToNull", "root", "12345678");
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+        
+        return con;
+    }
+    
+}
