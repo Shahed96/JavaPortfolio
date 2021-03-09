@@ -1,10 +1,10 @@
  steps:
-1.add to the project's library:
+1.add to the project's library the following lib:
  MySQL  JDBC Driver 
 
 2.make new connection
 port:3307
-username:root/ or any othee users you added
+username:root/ or any other users you added
 pass:12345678/ or any other pass you added
 Databas: same name as in the phpMyadmin
 
