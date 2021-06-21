@@ -4,7 +4,7 @@ package selection.sort;
  *
  * @author Shahed A. Abdulwahhb
  */
-public class SelectionSort {
+public class SelectionSort  {
 
     /**
      * @param args the command line arguments
@@ -17,7 +17,7 @@ public class SelectionSort {
     }
     //Generic method:
 
-    public static <T extends Comparable<? super T>> void selectionSort(T[] arr) { //extends expressin to use compareTo method
+    public static <T extends Comparable> void selectionSort(T[] arr) { //extends expressin to use compareTo method
         int min;
         int size = arr.length;
         for (int i = 0; i < size - 1; i++) {
